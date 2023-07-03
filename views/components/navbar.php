@@ -23,7 +23,7 @@ $navbar = <<<HTML
 <a href = '/login' class = 'nav-link'>sign in</a>
 </li>
 <li class = 'nav-item'>
-<a href = '#' class = 'nav-link'>sign up</a>
+<a href = '/register' class = 'nav-link'>sign up</a>
 </li>
 </ul>
 </div>

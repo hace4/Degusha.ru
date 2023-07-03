@@ -1,4 +1,7 @@
 RewriteEngine On
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
 RewriteCond %{REQUEST_FILENAME} !-f
 AddDefaultCharset UTF-8
 RewriteRule ^(.+)$ index.php?q=$1  [L]

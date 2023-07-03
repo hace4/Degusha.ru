@@ -8,7 +8,7 @@
 <body>
 <?php require_once 'views/components/navbar.php'?>
 <div class="container d-flex justify-content-center mt-4"">
-    <h1 >Page Not found <br> err0r 404</h1>
+    <h1 >Page Not found <br> errr 404</h1>
 </div>
 </body>
 </html>
