@@ -3,7 +3,12 @@
 namespace App\services;
 
 class Router
-//add new page
+/**
+*@hace4
+*method for add new rout
+*@param $uri
+*@param $page_name
+*/
 {
     private static $list = [];
     public static function page($uri, $page_name)
