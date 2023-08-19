@@ -22,6 +22,7 @@ class Router
     public static function enable()
     {
         // requriens a page with name from  Super Global $_GET[q]
+        if (!empty($_GET['q'])){
             $query = $_GET['q'];
 
             foreach (self::$list as $route) {
@@ -31,6 +32,11 @@ class Router
                 }
             }       
             self::not_found();
+        }else{
+            require_once  "views/pages/home.php";
+                    die();
+        }
+
     }
 
     private static function not_found(){
