@@ -7,6 +7,7 @@
 
 <body>
 <?php require_once 'views/components/navbar.php'?>
+<script src="assets/js/main.js"></script>
 <div class="container d-flex justify-content-center mt-4"">
     <?php 
         use App\services\API\API_request;
