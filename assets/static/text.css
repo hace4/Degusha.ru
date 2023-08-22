@@ -1,0 +1,9 @@
+.fw-light {
+    text-shadow: 0 0 20px #56ff49;
+  }
+.row.text{
+    margin-top: 25dvh;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
