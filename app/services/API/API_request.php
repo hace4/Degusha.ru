@@ -1,9 +1,11 @@
 <?php
 namespace App\services\API;
-
+session_start();
 class API_request{
-    public static function GET($id = ''){
-        return file_get_contents("http://Degusha.API.local/notebook/api/v1/Degusha/$id");
+    public static function len(){
+            $_SESSION["len"] = $_POST['length'];
+        }
+       
     }
 
-}
+API_request::len();
