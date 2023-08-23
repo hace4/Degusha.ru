@@ -2,8 +2,8 @@
 
 $card = <<<HTML
 
-          <div class="col">
-          <div class="card shadow-sm">
+          <div class="col py-4 px-3">
+          <div class="card shadow-sm ">
           <video class="card-video" width="100%" height="98%" controls="controls" poster="">
         </video>
             <div class="card-body">
@@ -13,7 +13,6 @@ $card = <<<HTML
                   <button type="button" class="btn btn-sm btn-outline-secondary">Смотреть</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Редактировать</button>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>

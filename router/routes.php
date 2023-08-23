@@ -5,6 +5,7 @@ use App\services\Router;
 Router::page('/register', "register");
 Router::page('/login', "login");
 Router::page('/gallery', "gallery");
+Router::page('/Admin', "Admin");
 Router::page('/', "home");
 
 

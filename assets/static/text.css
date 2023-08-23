@@ -1,9 +1,46 @@
-.fw-light {
-    text-shadow: 0 0 20px #56ff49;
-  }
+
 .row.text{
     margin-top: 25dvh;
 }
 ::-webkit-scrollbar {
     width: 0;
   }
+.card{
+    opacity: 0;
+    left: -500px;
+  }
+.text-al{
+
+  opacity: 0;
+
+}
+@keyframes ch-color-1 {
+  from {
+    text-shadow: 0 0 20px    rgb(255, 255, 255);
+  }
+  50% {
+    text-shadow: 0 0 20px rgb(0, 255, 225);
+  }
+  to {
+    text-shadow: 0 0 20px #56ff49;
+  }
+}
+  @media (prefers-reduced-motion: no-preference) {
+    .card.animation {
+      left: 0px;
+      transition: opacity 4.5s ease, left 4.5s linear;
+      opacity: 1;
+    }
+    .text-al.animation {
+      transition: opacity 4.5s ease, transform 4.5s ease;
+      opacity: 1;
+      .fw-light{
+        animation: ch-color-1 3s forwards;
+      }
+
+    }
+  }
+
+.album{
+  height: 100dvh;
+}
