@@ -9,6 +9,7 @@ use App\services\Page;
 </head>
 
 <body>
+<?php Page::part('preloader') ?>
 <?php Page::part('navbar')?>
 <div class="container">
 <?php Page::part("reg_form")?>

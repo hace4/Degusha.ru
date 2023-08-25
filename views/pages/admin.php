@@ -1,14 +1,16 @@
+<?php
+use App\services\Page;
+?>
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme=<?php echo "dark";?>>
 
 <head>
-<?php require_once 'views/components/head.php'?>
+<?php Page::part('head')?>
 </head>
 
 <body>
-<?php require_once 'views/components/navbar.php'?>
-<div class="container d-flex justify-content-center mt-4"">
-    <h1 >Page home </h1>
-</div>
+<?php Page::part('preloader') ?>
+<?php Page::part('navbar')?>
 </body>
+
 </html>

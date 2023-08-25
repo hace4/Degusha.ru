@@ -9,10 +9,18 @@
     opacity: 0;
     left: -500px;
   }
+  @media (max-width: 820px) { 
+    .card{
+      left: -70px;
+    }
+   }
 .text-al{
 
   opacity: 0;
 
+}
+.fw-light{
+  text-shadow: 0 0 20px    rgb(255, 255, 255);
 }
 @keyframes ch-color-1 {
   from {
@@ -28,7 +36,7 @@
   @media (prefers-reduced-motion: no-preference) {
     .card.animation {
       left: 0px;
-      transition: opacity 4.5s ease, left 4.5s linear;
+      transition: opacity 2.5s ease, left 2.5s linear;
       opacity: 1;
     }
     .text-al.animation {
@@ -40,7 +48,79 @@
 
     }
   }
-
+.msg.none{
+  display: none;
+}
 .album{
   height: 100dvh;
+}
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #333333;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #0aaa15;
+  box-shadow: 0 0 20px #56ff49;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
