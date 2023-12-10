@@ -20,6 +20,7 @@ api_request::api_conn();
     Page::part('modal');
     Page::part('navbar');
     Page::part("albom_text");
+    Page::part("ModalForAddVideo");
     Page::part("card");
     ?>
 
