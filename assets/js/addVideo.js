@@ -6,13 +6,13 @@ form.addEventListener("click", ()=>{
     const  TitleInput = document.getElementById("exampleInputTitle"); 
     const  preview = document.getElementById("exampleInputPreview");
     console.log(form );
-    var Header = encodeURIComponent(HeaderInput.input);
-    var Title = encodeURIComponent(TitleInput.input);
-    var Video = encodeURIComponent(fileInput.files[0]);
-    var Preview = encodeURIComponent(preview.files[0]);
+    var Header = HeaderInput.value;
+    var Title = TitleInput.value;
+    var Video = fileInput.files[0];
+    var Preview = preview.files[0];
     var formData = new FormData();
     formData.append('video', Video);
-    formData.append('Header',Header);
+    formData.append('Header', Header);
     formData.append('Title', Title);
     formData.append('preview', Preview);
     
