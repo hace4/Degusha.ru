@@ -17,9 +17,9 @@ $albom_text = <<<HTML
 </div>
 <div class = 'appendvideo'>
 <hr class = ''>
-<div class = 'control vw-100 d-flex flex-row'>
+<div class = 'control d-flex flex-row'>
 <button class = 'btn btn-warning ' data-bs-toggle = 'modal' data-bs-target = '#exampleModal'>
-<p>Добавить видео</p>
+Добавить видео
 </button>
 </div>
 
