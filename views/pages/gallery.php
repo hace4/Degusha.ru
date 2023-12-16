@@ -24,8 +24,9 @@ api_request::api_conn();
     Page::part("ModalForAddVideo");
     Page::part("card");
     ?>
-
+    <script src="assets/js/showVideo.js"></script>
     <script src="assets/js/main.js"></script>
+
     <script src="assets/js/card_tools.js"></script>
     <script src="assets/js/addVideo.js"></script>
 

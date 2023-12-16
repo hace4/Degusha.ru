@@ -20,9 +20,3 @@ $('button.btn.del').on('click', function() {
       }
   })
 });
-$('button.btn.close').on('click', function() {
-  location.reload();
-});
-$('button.btn-close').on('click', function() {
-  location.reload();
-});

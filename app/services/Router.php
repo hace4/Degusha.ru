@@ -24,7 +24,6 @@ class Router
         // requriens a page with name from  Super Global $_GET[q]
         if (!empty($_GET['q'])){
             $query = $_GET['q'];
-
             foreach (self::$list as $route) {
                 if ($route["uri"] === '/' . $query) {
                     require_once  "views/pages/$route[page].php";

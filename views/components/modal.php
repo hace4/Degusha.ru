@@ -11,7 +11,7 @@ $modal = <<<HTML
         <p class="msg"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn close btn-success" data-bs-dismiss="modal">Close</button>
+        <button type="button" id='submitvideocontrol' class="btn close btn-success submitvideocontrol" oncclick="show()" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
