@@ -17,7 +17,7 @@ api_request::api_conn();
 
 <body>
     <?php
-    Page::part('preloader');
+
     Page::part('modal');
     Page::part('navbar');
     Page::part("albom_text");

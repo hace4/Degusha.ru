@@ -13,7 +13,8 @@ class api_request{
         self::$curl = curl_init() ;
     }
 
-    private static function setup($mehod, $params, $id='') : void{curl_setopt_array(self::$curl, array(
+    private static function setup($mehod, $params, $id='') : void{
+        curl_setopt_array(self::$curl, array(
         CURLOPT_URL => "http://Degusha.API.local/notebook/api/v1/Degusha/". $id,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
