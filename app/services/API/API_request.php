@@ -14,7 +14,7 @@ class api_request{
     }
 
     private static function setup($mehod, $params, $id='') : void{curl_setopt_array(self::$curl, array(
-        CURLOPT_URL => "http://Degusha.API.local/notebook/api/v1/Degusha/". $id,
+        CURLOPT_URL => "https://d458-91-77-161-155.ngrok-free.app/notebook/api/v1/Degusha/". $id,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,

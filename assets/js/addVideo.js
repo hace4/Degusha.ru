@@ -17,7 +17,7 @@ form.addEventListener("click", ()=>{
     formData.append('preview', Preview);
     
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://Degusha.API.local/notebook/api/v1/Degusha/', true);
+    xhr.open('POST', 'https://d458-91-77-161-155.ngrok-free.app/notebook/api/v1/Degusha/', true);
     
     xhr.onload = function() {console.log(xhr.status);
         if (xhr.status === 201) {
